@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="365.0" prefWidth="392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.FestivalController">
+   <children>
+      <Button defaultButton="true" layoutX="135.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleSignUpAction" text="등록" />
+      <Button cancelButton="true" layoutX="198.0" layoutY="315.0" mnemonicParsing="false" onAction="#handleCloseAction" text="닫기" />
+      <Label layoutX="35.0" layoutY="21.0" styleClass="lblClass" text="&lt; 축제참가자 등록 &gt;">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="79.0" text="접수일자" />
+      <DatePicker fx:id="dpSignUpDate" layoutX="110.0" layoutY="74.0" />
+      <Label layoutX="26.0" layoutY="129.0" text="학년" />
+      <Label layoutX="28.0" layoutY="173.0" text="반" />
+      <ComboBox fx:id="cbClass" layoutX="110.0" layoutY="168.0" prefWidth="150.0" />
+      <RadioButton fx:id="rdbFirst" layoutX="118.0" layoutY="129.0" mnemonicParsing="false" selected="true" text="1학년">
+         <toggleGroup>
+            <ToggleGroup fx:id="year" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rdbSecond" layoutX="201.0" layoutY="129.0" mnemonicParsing="false" text="2학년" toggleGroup="$year" />
+      <RadioButton fx:id="rdbThird" layoutX="282.0" layoutY="129.0" mnemonicParsing="false" text="3학년" toggleGroup="$year" />
+      <Label layoutX="26.0" layoutY="273.0" text="참가분야" />
+      <CheckBox fx:id="ckbMusic" layoutX="116.0" layoutY="272.0" mnemonicParsing="false" text="노래" />
+      <CheckBox fx:id="ckbDance" layoutX="202.0" layoutY="272.0" mnemonicParsing="false" text="춤" />
+      <CheckBox fx:id="ckbBand" layoutX="268.0" layoutY="272.0" mnemonicParsing="false" text="밴드" />
+      <Label layoutX="28.0" layoutY="228.0" text="이름" />
+      <TextField fx:id="txtName" layoutX="110.0" layoutY="223.0" />
+   </children>
+</AnchorPane>

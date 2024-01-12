@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="738.0" prefWidth="748.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.IdolGroupController">
+   <children>
+      <ListView fx:id="listView" layoutX="22.0" layoutY="33.0" prefHeight="283.0" prefWidth="155.0" />
+      <TableView fx:id="tableView" editable="true" layoutX="202.0" layoutY="33.0" prefHeight="283.0" prefWidth="302.0">
+        <columns>
+          <TableColumn prefWidth="148.0" text="멤버명" />
+          <TableColumn prefWidth="152.0" text="역할" />
+            <TableColumn prefWidth="75.0" text="이미지" visible="false" />
+            <TableColumn prefWidth="75.0" text="URL" visible="false" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageView" fitHeight="283.0" fitWidth="200.0" layoutX="524.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" />
+      <WebView fx:id="webView" layoutX="22.0" layoutY="327.0" prefHeight="371.0" prefWidth="714.0" />
+      <Button layoutX="349.0" layoutY="702.0" mnemonicParsing="false" onAction="#handleOkAction" text="확인" />
+   </children>
+</AnchorPane>

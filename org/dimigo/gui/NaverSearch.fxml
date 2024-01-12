@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="677.0" prefWidth="817.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.controller.NaverSearchController">
+   <children>
+      <Label layoutX="22.0" layoutY="14.0" text="검색대상">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="22.0" layoutY="43.0" prefHeight="327.0" prefWidth="139.0" />
+      <Label layoutX="194.0" layoutY="13.0" text="검색결과" />
+      <TableView fx:id="bookTableView" layoutX="179.0" layoutY="43.0" onMouseClicked="#handleBookAction" prefHeight="327.0" prefWidth="606.0" visible="false">
+        <columns>
+          <TableColumn prefWidth="280.0" text="책제목" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="" />
+            <TableColumn prefWidth="189.0" text="저자명" />
+            <TableColumn prefWidth="135.0" text="가격" />
+        </columns>
+      </TableView>
+      <WebView fx:id="webView" layoutX="27.0" layoutY="384.0" prefHeight="238.0" prefWidth="763.0" />
+      <TableView fx:id="movieTableView" layoutX="179.0" layoutY="43.0" onMouseClicked="#handleMovieAction" prefHeight="327.0" prefWidth="613.0" visible="false">
+        <columns>
+          <TableColumn prefWidth="253.0" text="영화명" />
+          <TableColumn minWidth="0.0" prefWidth="0.0" text="" />
+            <TableColumn prefWidth="164.0" text="개봉년도" />
+            <TableColumn prefWidth="195.0" text="감독명" />
+        </columns>
+      </TableView>
+      <Button layoutX="360.0" layoutY="634.0" mnemonicParsing="false" onMouseClicked="#handleCloseAction" text="닫기" />
+   </children>
+</AnchorPane>

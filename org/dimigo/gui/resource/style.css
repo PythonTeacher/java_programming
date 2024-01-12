@@ -1,0 +1,17 @@
+/* XML 태그 선택자 */
+AnchorPane {
+	-fx-background-color: yellow;
+}
+
+/* id 선택자 */
+#txtName {
+	-fx-background-color: pink;
+	-fx-text-fill: black;
+}
+
+/* class 선택자 */
+.lblClass {
+    -fx-font-size: 20pt;
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}

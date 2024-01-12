@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="459.0" prefWidth="775.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.project.ProjectController">
+   <children>
+      <Label fx:id="lblTitle" layoutX="211.0" layoutY="33.0" prefHeight="28.0" prefWidth="354.0" textAlignment="CENTER" textFill="#8c6b0f">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStart" layoutX="283.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleStartAction" prefHeight="29.0" prefWidth="76.0" text="Select" />
+      <Label layoutX="60.0" layoutY="95.0" text="발표 안 한 팀" />
+      <Label layoutX="407.0" layoutY="95.0" text="발표할 팀" />
+      <TableView fx:id="remainedView" layoutX="50.0" layoutY="130.0" prefHeight="251.0" prefWidth="309.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="번호" />
+          <TableColumn prefWidth="233.0" text="팀원" />
+        </columns>
+      </TableView>
+      <TableView fx:id="selectedView" layoutX="388.0" layoutY="130.0" prefHeight="251.0" prefWidth="333.0">
+        <columns>
+          <TableColumn text="번호" />
+          <TableColumn prefWidth="252.0" text="팀원" />
+        </columns>
+      </TableView>
+      <Button layoutX="388.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleFinishAction" text="Finish" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.Button?>
+
+<VBox alignment="CENTER" prefHeight="400" prefWidth="500" spacing="30" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="org.dimigo.gui.HelloWorldController">
+	<!-- TODO Add Nodes -->
+	<children>
+		<Label contentDisplay="CENTER" text="Hello, World">
+			<font>
+				<Font size="70" />
+			</font>
+		</Label>
+		<Button onAction="#handleCloseAction" text="닫기" />
+	</children>
+</VBox>

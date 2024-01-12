@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.LoginController">
+   <children>
+      <Label layoutX="157.0" layoutY="110.0" text="아이디" />
+      <TextField fx:id="txtId" layoutX="235.0" layoutY="105.0" prefHeight="29.0" prefWidth="263.0" />
+      <Label layoutX="142.0" layoutY="163.0" text="비밀번호" />
+      <PasswordField fx:id="txtPwd" layoutX="235.0" layoutY="158.0" prefHeight="29.0" prefWidth="256.0" />
+      <Button layoutX="217.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleLoginAction" text="로그인" />
+      <Button layoutX="347.0" layoutY="223.0" mnemonicParsing="false" onAction="#handleCloseAction" text="닫기" />
+      <Label fx:id="lblResult" layoutX="130.0" layoutY="292.0" prefHeight="19.0" prefWidth="395.0" />
+   </children>
+</AnchorPane>

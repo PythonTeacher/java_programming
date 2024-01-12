@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="233.0" prefWidth="544.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.TimerController">
+   <children>
+      <Label fx:id="lblTimer1" alignment="CENTER" layoutX="62.0" layoutY="60.0" prefHeight="52.0" prefWidth="177.0" style="-fx-background-color: black; -fx-text-fill: white;" text="00:00:00">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStart1" layoutX="94.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleStart1Action" text="시작" />
+      <Button fx:id="btnStop1" layoutX="159.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleStop1Action" text="중지" />
+      <Label fx:id="lblTimer2" alignment="CENTER" layoutX="315.0" layoutY="60.0" prefHeight="52.0" prefWidth="168.0" style="-fx-background-color: black; -fx-text-fill: white;" text="01:00:00">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStart2" layoutX="343.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleStart2Action" text="시작" />
+      <Button fx:id="btnStop2" layoutX="408.0" layoutY="154.0" mnemonicParsing="false" onAction="#handleStop2Action" text="중지" />
+   </children>
+</AnchorPane>

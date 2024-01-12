@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="719.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.MelonController">
+   <children>
+      <Label layoutX="22.0" layoutY="14.0" text="장르">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Label>
+      <ListView fx:id="listView" layoutX="22.0" layoutY="43.0" prefHeight="300.0" prefWidth="139.0" />
+      <Label layoutX="194.0" layoutY="13.0" text="곡목록" />
+      <TableView fx:id="tableView" layoutX="179.0" layoutY="43.0" prefHeight="300.0" prefWidth="513.0">
+        <columns>
+          <TableColumn prefWidth="254.0" text="곡명" />
+          <TableColumn prefWidth="258.0" text="가수명" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

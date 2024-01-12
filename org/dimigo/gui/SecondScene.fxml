@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="246.0" prefWidth="445.0" style="-fx-background-color: pink;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.SceneTestController">
+   <children>
+      <Label layoutX="84.0" layoutY="38.0" text="Second Scene">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn2" layoutX="140.0" layoutY="142.0" mnemonicParsing="false" onAction="#handleButtonAction" text="Go To First Scene" />
+   </children>
+</AnchorPane>

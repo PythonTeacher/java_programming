@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="470.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.LayoutSampleController">
+   <top>
+      <HBox maxHeight="70.0" prefHeight="48.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #336699;;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" text="Current" />
+            <Button mnemonicParsing="false" text="Projected" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="150.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label text="Data">
+               <font>
+                  <Font name="Arial Bold" size="15.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="hplSales" onAction="#handleHyperlinkSales" text="Sales" />
+            <Hyperlink fx:id="hplMarketing" prefHeight="27.0" prefWidth="107.0" text="Marketing" />
+            <Hyperlink fx:id="hplDistribution" text="Distribution" />
+            <Hyperlink fx:id="hplCosts" text="Costs" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <center>
+      <GridPane hgap="10.0" prefHeight="273.0" prefWidth="408.0" vgap="10.0" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="98.0" minHeight="10.0" prefHeight="35.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="172.0" minHeight="10.0" prefHeight="172.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <Label text="Sales:" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Current Year" GridPane.columnIndex="2" GridPane.columnSpan="2">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label text="Goods and Services" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+            <ImageView fitHeight="70.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" GridPane.rowSpan="2">
+               <image>
+                  <Image url="@images/house.png" />
+               </image>
+            </ImageView>
+            <Label text="Goods&#10;80%" GridPane.rowIndex="2" />
+            <ImageView fitHeight="151.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="2">
+               <image>
+                  <Image url="@images/piechart.png" />
+               </image>
+            </ImageView>
+            <Label text="Services&#10;20%" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <FlowPane fx:id="flowPane" hgap="5.0" prefHeight="277.0" prefWidth="200.0" style="-fx-background-color: DAE6F3;;" vgap="5.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </FlowPane>
+   </right>
+   <bottom>
+      <AnchorPane prefHeight="46.0" prefWidth="820.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="674.0" layoutY="10.0" mnemonicParsing="false" text="Save" />
+            <Button layoutX="737.0" layoutY="10.0" mnemonicParsing="false" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="435.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.dimigo.gui.InputController">
+   <children>
+      <Button fx:id="btnOk" defaultButton="true" layoutX="168.0" layoutY="321.0" mnemonicParsing="false" onAction="#registerAction" text="확인" />
+      <Button fx:id="btnClose" cancelButton="true" layoutX="232.0" layoutY="321.0" mnemonicParsing="false" onAction="#closeAction" text="닫기" />
+      <Label layoutX="35.0" layoutY="21.0" text="&lt; 디미헬스 회원가입 &gt;">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="75.0" text="이름" />
+      <TextField fx:id="txtName" layoutX="146.0" layoutY="70.0" />
+      <Label layoutX="35.0" layoutY="123.0" text="생년월일" />
+      <DatePicker fx:id="dateBirthDt" layoutX="146.0" layoutY="118.0" prefHeight="29.0" prefWidth="172.0" />
+      <Label layoutX="35.0" layoutY="172.0" text="성별" />
+      <Label layoutX="35.0" layoutY="221.0" text="좋아하는 운동" />
+      <CheckBox fx:id="chkSoccer" layoutX="148.0" layoutY="220.0" mnemonicParsing="false" text="축구" />
+      <CheckBox fx:id="chkBaseball" layoutX="224.0" layoutY="220.0" mnemonicParsing="false" text="야구" />
+      <CheckBox fx:id="chkBasketBall" layoutX="300.0" layoutY="220.0" mnemonicParsing="false" text="농구" />
+      <RadioButton fx:id="rbMale" layoutX="149.0" layoutY="172.0" mnemonicParsing="false" text="남자">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbFemale" layoutX="225.0" layoutY="172.0" mnemonicParsing="false" text="여자" toggleGroup="$gender" />
+      <ComboBox fx:id="cbOption" layoutX="149.0" layoutY="266.0" prefWidth="150.0" promptText="- 선 택 -" />
+      <Label layoutX="35.0" layoutY="271.0" text="옵션선택" />
+   </children>
+</AnchorPane>
